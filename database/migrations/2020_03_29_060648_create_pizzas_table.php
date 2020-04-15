@@ -16,9 +16,9 @@ class CreatePizzasTable extends Migration
         Schema::create('pizzas', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
-            $table->string('type', 100);
-            $table->string('name', 100);
-            $table->string('base', 100);
+            $table->string('type', 100)->nullable();
+            $table->string('name', 100)->nullable();
+            $table->string('base', 100)->nullable();
             $table->json('toppings')->nullable();
 
         });
