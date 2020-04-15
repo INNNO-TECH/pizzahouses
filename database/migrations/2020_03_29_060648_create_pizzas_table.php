@@ -19,7 +19,7 @@ class CreatePizzasTable extends Migration
             $table->string('type', 100)->nullable();
             $table->string('name', 100)->nullable();
             $table->string('base', 100)->nullable();
-            $table->json('toppings')->nullable();
+            $table->json('toppings');
 
         });
     }
