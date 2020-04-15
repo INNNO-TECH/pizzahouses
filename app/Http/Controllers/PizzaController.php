@@ -15,6 +15,7 @@ class PizzaController extends Controller
        //$pizzas=Pizza::all();
        //$pizzas=Pizza::orderBy('name', 'desc')->get();
        //$pizzas=Pizza::where('type', 'hawaiian')->get();
+       return "Hello Yan Naing Oo";
        $pizzas=Pizza::latest()->get();
         return view('pizzas.index',['pizzas'=>$pizzas]);
     }
